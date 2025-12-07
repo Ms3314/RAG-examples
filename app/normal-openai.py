@@ -29,8 +29,7 @@ embedding_model = OpenAIEmbeddings(
     # of the embeddings you want returned.
     dimensions=1536
 )
-# embedded = embedding_model.embed_documents(str(split_docs))
-# print(embedded)
+
 # create a Qdrant client and instantiate LangChain's Qdrant vector store
 client = QdrantClient(url="http://localhost:6333")
 
@@ -43,12 +42,12 @@ try:
     print("Created new collection: new-store")
 except Exception as e:
     print(f"Error with collection: {e}")
-    # If there's an issue, try to recreate
-    vector_store = QdrantVectorStore(
-        client=client,
-        collection_name="new-store",
-        embedding=embedding_model,
-    )
+
+vector_store = QdrantVectorStore(
+    client=client,
+    collection_name="new-store",
+    embedding=embedding_model,
+)
 
 try:
     vector_store.add_documents(split_docs)
