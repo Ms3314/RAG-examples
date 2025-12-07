@@ -1,1 +1,0 @@
-# we have to make an user Interface using streamlit and do it 
