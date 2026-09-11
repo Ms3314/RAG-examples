@@ -1,5 +1,8 @@
 # Free RAG Examples 🚀
 
+to learn RAG in easy manner refer the my blog :
+https://medium.com/@hsamiuddin405/the-abcs-of-rag-you-need-understand-a-beginners-guide-4ff14e15fb5b
+
 A comprehensive collection of Retrieval-Augmented Generation (RAG) implementations using different methods, embedding models, and data sources.
 
 ## 📋 Overview
